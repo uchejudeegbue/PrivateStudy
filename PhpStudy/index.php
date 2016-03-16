@@ -65,4 +65,6 @@ echo "<h2>PHP is Fun!</h2>";
 echo "Hello World! <br>";
 echo "I am learning PHP! <br>";
 echo "This " . "string " . "was ", "made ", "with multiple ", "parameters.";
+/*Notice in the above that you can use full stop sign "." or
+comma sign "," to concantenate strings of data*/
 ?>
