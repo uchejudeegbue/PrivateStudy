@@ -20,7 +20,8 @@ echo "Print Again";
 // Note that you can use comments to leave out parts of a code line
 $x = 5 /* + 15 */ + 5;
 echo "<br>";
-echo $x;
+echo "$x";
+echo "<br>";
 /* In php, all keys - echo, if, else, while etc
 classes, functions and user defined functions
 are not case sensitive. See examples below*/
