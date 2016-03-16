@@ -16,6 +16,7 @@ echo "Print Again";
 // echo - is used to print out things
 //$ - is used to make inputs
 //use semi colon to end any line in php
+//<br> is used for line break as it is done in html
 // Note that you can use comments to leave out parts of a code line
 $x = 5 /* + 15 */ + 5;
 ?>
