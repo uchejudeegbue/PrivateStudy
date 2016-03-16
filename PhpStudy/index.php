@@ -129,7 +129,7 @@ echo "<br>";
 
 $x = 100;
 $y = "100";
-echo ($x != $y);
+echo "$x != $y";
 
 var_dump($x != $y); // returns false because values are equal
 var_dump ($y);
