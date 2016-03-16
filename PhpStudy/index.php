@@ -21,4 +21,10 @@ echo "Print Again";
 $x = 5 /* + 15 */ + 5;
 echo "<br>";
 echo $x;
+/* In php, all keys - echo, if, else, while etc
+classes, functions and user defined functions
+are not case sensitive. See examples below*/
+ECHO "Printing <br>";
+Echo "Printing <br>";
+echo "Printing <br>";
 ?>
