@@ -19,5 +19,6 @@ echo "Print Again";
 //<br> is used for line break as it is done in html
 // Note that you can use comments to leave out parts of a code line
 $x = 5 /* + 15 */ + 5;
+echo "<br>";
 echo $x;
 ?>
