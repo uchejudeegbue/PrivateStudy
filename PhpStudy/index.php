@@ -109,6 +109,7 @@ Logical operators
 String operators
 Array operators*/
 
+//The PHP assignment operators are used with numeric values to write a value to a variable.
 $x = 20;
 $x += 100;
 
@@ -127,12 +128,47 @@ $x %= 4;
 echo $x;
 echo "<br>";
 
+//The PHP comparison operators are used to compare two values (number or string)
+
 $x = 100;
 $y = "100";
 
 var_dump($x != $y); // returns false because values are equal
 echo "<br>";
 var_dump ($y);
+
+echo"<br>";
+
+//The PHP increment operators are used to increment a variable's value.
+
+$x = 10;
+echo ++$x; //Pre-increment	Increments $x by one, then returns $x
+echo "<br>";
+
+$x = 10;
+echo $x++; //Post-increment	Returns $x, then increments $x by one
+
+//The PHP decrement operators are used to decrement a variable's value.
+
+$x = 10;
+echo --$x; //Pre-decrement	Decrements $x by one, then returns $x
+echo "<br>";
+
+//The PHP logical operators are used to combine conditional statements.
+
+$x = 100;
+$y = 50;
+
+if ($x == 100 && $y == 50) {
+    echo "Hello world!";
+} //logical AND 	$x && $y	True if both $x and $y are true
+
+$x = 100;
+$y = 50;
+
+if ($x == 100 || $y == 80) {
+    echo "Hello world!";
+}// logical OR $x || $y	True if either $x or $y is true
 
 
 
