@@ -14,7 +14,8 @@ It is a good programming practice to put comments in your codes
 to enable you remember what you have done sometime after*/
 echo "Print Again";
 // echo - is used to print out things
-//$ - is used to make input variables
+//$ - is used to make declare variables
+// Numerical variables are not declared inside parenthesis
 //use semi colon to end any line in php
 //<br> is used for line break as it is done in html
 // Note that you can use comments to leave out parts of a code line
@@ -31,7 +32,8 @@ echo "Printing <br>";
 /* All variables are case sensitive
 Below, only the first statement will display the $color variable
 because $color, $COLOR and $coLOR are treated as different variables
-Also note that we use the dot sign , "." , to concantenate*/
+Note that we use the dot sign , "." , to concantenate*/
+// Also note that Alphabetical variables are declared inside parenthesis
 $color = "red";
 echo "My car is " . $color . "<br>";
 echo "My house is " . $COLOR . "<br>";
