@@ -161,14 +161,16 @@ $y = 50;
 
 if ($x == 100 && $y == 50) {
     echo "Hello world!";
-} //logical AND 	$x && $y	True if both $x and $y are true
+    } //logical AND 	$x && $y	True if both $x and $y are true
+echo "<br>";
 
 $x = 100;
 $y = 50;
 
 if ($x == 100 || $y == 80) {
-    echo "Hello world!";
+    echo "HELLO WORLD!";
 }// logical OR $x || $y	True if either $x or $y is true
+echo "<br>";
 
 
 
