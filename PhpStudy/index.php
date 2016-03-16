@@ -172,6 +172,11 @@ if ($x == 100 || $y == 80) {
 }// logical OR $x || $y	True if either $x or $y is true
 echo "<br>";
 
+$x = 100;
+
+if ($x !== 90) {
+    echo "Hello world!";
+} //logical NOT !$x	True if $x is not true
 
 
 ?>
