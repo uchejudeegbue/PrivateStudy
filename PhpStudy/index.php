@@ -34,6 +34,6 @@ because $color, $COLOR and $coLOR are treated as different variables
 Also note that we use the dot sign , "." , to concantenate*/
 $color = "red";
 echo "My car is " . $color . "<br>";
-echo "My car is " . $COLOR . "<br>";
-echo "My car is " . $coLOR . "<br>";
+echo "My house is " . $COLOR . "<br>";
+echo "My boat is " . $coLOR . "<br>";
 ?>
