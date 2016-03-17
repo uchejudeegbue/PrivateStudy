@@ -233,13 +233,59 @@ switch ($favcolor) {
 echo "<br>";
 
 /*In PHP, we have the following looping statements:
-while - loops through a block of code as long as the specified condition is true*/
+while - loops through a block of code as long as the specified condition is true
+The example below first sets a variable $x to 1 ($x = 1).
+Then, the while loop will continue to run as long as
+$x is less than, or equal to 5 ($x <= 5).
+$x will increase by 1 each time the loop runs ($x++):*/
+
+$x = 1;
+
+while($x <= 5) {
+    echo "The number is: $x <br>";
+    $x++;
+}
+echo "<br>";
+/*do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
+The example below first sets a variable $x to 1 ($x = 1). Then, the do while loop will write some output, and then
+increment the variable $x with 1. Then the condition is checked (is $x less than, or equal to 5?), and the loop will continue
+to run as long as the condition is true i.e. $x is less than, or equal to 5:*/
+
+$x = 1;
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x <= 5);
+echo "<br>";
+
+/*Notice that in a do while loop the condition is tested AFTER executing the statements
+within the loop. This means that the do while loop would execute its statements at least
+once, even if the condition is false the first time. The example below sets the $x variable
+to 6, then it runs the loop, and then the condition is checked:*/
+
+$x = 6;
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x<=5);
+echo "<br>";
+
+/*for - loops through a block of code a specified number of times
+It is used when you know in advance how many times the script should run
+$x = 6;
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x<=5);
+init counter: Initialize the loop counter value
+test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
+increment counter: Increases the loop counter value. The example below displays the numbers from 0 to 10:*/
 
 
-//do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
 
-
-//for - loops through a block of code a specified number of times
 
 
 //foreach - loops through a block of code for each element in an array
