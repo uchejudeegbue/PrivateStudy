@@ -178,5 +178,42 @@ if ($x !== 90) {
     echo "Hello world!";
 } //logical NOT !$x	True if $x is not true
 
+/*In PHP we have the following conditional statements:
+if statement - executes some code if one condition is true*/
+
+$t = date("H");
+
+if ($t < "20") {
+    echo "Have a good day!";
+}
+echo "<br>";
+//if...else statement - executes some code if a condition is true and another code if that condition is false
+
+$t = date("H");
+
+if ($t < "20") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+echo "<br>";
+
+//if...elseif....else statement - executes different codes for more than two conditions
+
+$t = date("H");
+echo "<p>The hour (of the server) is " . $t;
+echo ", and will give the following message:</p>";
+
+if ($t <  "10") {
+    echo "Have a good morning!";
+} elseif ($t <  "20") {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
+echo "<br>";
+//switch statement - selects one of many blocks of code to be executed
+
+
 
 ?>
