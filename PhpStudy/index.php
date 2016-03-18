@@ -367,7 +367,7 @@ function wanted($fName, $specs, $mugs, $sR, $awardfCap){
 $awardfCap = (10 * ($specs * $mugs * $sR )/2);
 $specs = 5;
 $mugs = 4;
-$sR = 2;
+$sR = 3;
 
 Wanted ("Joe", $specs, $mugs, $sR, $awardfCap);
 ?>
