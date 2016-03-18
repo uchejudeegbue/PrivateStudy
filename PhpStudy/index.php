@@ -364,7 +364,7 @@ function wanted($fName, $specs, $mugs, $sR, $awardfCap){
     echo "Wanted: $fName Bloggs <br> Know to be in possession of the folowing items: <br>
             Specs ($specs) <br> Mugs ($mugs) <br> Sausage Rolls ($sR) <br> Award for Capture $awardfCap";
 }
-$awardfCap = (10 * ($specs * $specs * $mugs * $mugs * $sR * $sR));
+$awardfCap = (10 * (5 * 5 * 4 * 4 * 3 * 3));
 $specs = 5;
 $mugs = 4;
 $sR = 3;
