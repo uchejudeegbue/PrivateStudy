@@ -362,7 +362,7 @@ echo "<br>";
 
 function wanted($fName, $specs, $mugs, $sR, $awardfCap){
     echo "Wanted: $fName Bloggs <br> Know to be in possession of the folowing items: <br>
-            Specs ($specs) <br> Mugs ($mugs) <br> Sausage Rolls ($sR) <br> Award for Capture ($awardfCap = (10 * ($specs * $specs * $mugs * $mugs * $sR * $sR)/2))";
+            Specs ($specs) <br> Mugs ($mugs) <br> Sausage Rolls ($sR) <br> Award for Capture ($awardfCap)";
 }
 $awardfCap = (10 * ($specs * $specs * $mugs * $mugs * $sR * $sR)/2);
 $specs = 5;
@@ -370,4 +370,13 @@ $mugs = 4;
 $sR = 3;
 
 Wanted ("Joe", $specs, $mugs, $sR, $awardfCap);
+
+echo "<br>";
+
+function setHeight($minheight) {
+    echo "The height is : $minheight <br>";
+}
+minheight = 50;
+
+setHeight($minheight);
 ?>
