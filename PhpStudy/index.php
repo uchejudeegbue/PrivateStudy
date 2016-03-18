@@ -376,7 +376,7 @@ echo "<br>";
 function setHeight($minheight) {
     echo "The height is : $minheight <br>";
 }
-minheight = 50;
 
-setHeight($minheight);
+
+setHeight(60);
 ?>
