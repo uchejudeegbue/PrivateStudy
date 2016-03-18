@@ -343,9 +343,9 @@ family_Name("Kai Jim", "1983");
 
 echo "<br>";
 
-function squareValue($number = 7) {
+function squareValue($number = 8) {
     echo $number * $number;
 }
 
-squareValue(7); // echos 36
+squareValue(8); // echos 36
 ?>
