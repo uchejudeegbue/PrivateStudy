@@ -346,6 +346,6 @@ echo "<br>";
 function squareValue($number) {
     echo $number * $number;
 }
-$number = 6;
+$number = 7;
 squareValue($number); // echos 36
 ?>
