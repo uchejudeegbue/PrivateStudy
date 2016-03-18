@@ -363,11 +363,12 @@ echo "<br>";
 function wanted($fName, $specs, $mugs, $sR, $awardfCap){
     echo "Wanted: $fName Bloggs <br> Know to be in possession of the folowing items: <br>
             Specs ($specs) <br> Mugs ($mugs) <br> Sausage Rolls ($sR) <br> Award for Capture $awardfCap";
+    $awardfCap = (10 * ($specs * $specs * $mugs * $mugs * $sR * $sR)/2);
 }
-$awardfCap = (10 * ($specs * $specs * $mugs * $mugs * $sR * $sR)/2);
+
 $specs = 5;
 $mugs = 4;
 $sR = 2;
 
-Wanted ("Joe", $specs, $mugs, $sR);
+Wanted ("Joe", $specs, $mugs, $sR, $awardfCap);
 ?>
