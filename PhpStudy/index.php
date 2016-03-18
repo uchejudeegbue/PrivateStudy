@@ -369,5 +369,5 @@ $specs = 5;
 $mugs = 4;
 $sR = 2;
 
-Wanted ("Joe", "$specs", "$mugs", "$sR", "$awardfCap");
+Wanted ("Joe", $specs, $mugs, $sR, $awardfCap);
 ?>
