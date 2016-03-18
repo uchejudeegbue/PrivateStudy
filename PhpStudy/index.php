@@ -284,10 +284,62 @@ init counter: Initialize the loop counter value
 test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
 increment counter: Increases the loop counter value. The example below displays the numbers from 0 to 10:*/
 
-
-
-
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+}
+echo "<br>";
 
 //foreach - loops through a block of code for each element in an array
 
+/*Create a User Defined Function in PHP
+A user defined function declaration starts with the word "function":
+
+function functionName() {
+    code to be executed;
+
+A function name can start with a letter or underscore (not a number).
+Tip: Give the function a name that reflects what the function does!
+	Function names are NOT case-sensitive.
+
+In the example below, we create a function named "writeMsg()". The opening curly brace
+( { ) indicates the beginning of the function code and the closing curly brace ( } )indicates
+the end of the function. The function outputs "Hello world!". To call the function, just write its name:}*/
+
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg(); // calls the function
+echo "<br>";
+
+/* Information can be passed to functions through arguments. An argument is just like a variable.
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments
+as you want, just separate them with a comma.
+The following example has a function with one argument ($fname). When the familyName() function is called,
+we also pass along a name (e.g. Jani), and the name is used inside the function, which outputs several different
+first names, but an equal last name:*/
+
+function familyName($fname) {
+    echo "$fname Refsnes.<br>";
+}
+
+familyName("Jani");
+familyName("Hege");
+familyName("Stale");
+familyName("Kai Jim");
+familyName("Borge");
+
+echo "<br>";
+
+//The following example has a function with two arguments ($fname and $year):
+
+function family_Name($fname, $year) {
+    echo "$fname Refsnes. Born in $year <br>";
+}
+
+family_Name("Hege", "1975");
+family_Name("Stale", "1978");
+family_Name("Kai Jim", "1983");
+
+echo "<br>";
 ?>
