@@ -342,4 +342,10 @@ family_Name("Stale", "1978");
 family_Name("Kai Jim", "1983");
 
 echo "<br>";
+
+function squareValue($number) {
+    echo $number * $number;
+}
+$n = 6;
+squareValue($n); // echos 36
 ?>
