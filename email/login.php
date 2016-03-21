@@ -5,7 +5,7 @@
  * Date: 3/21/2016
  * Time: 4:48 AM
  */
-include("connect.php");//Establishing connection with our database
+include("connection.php");//Establishing connection with our database
 if (empty($_POST["username"]) || empty($_POST["password"])) {
     echo "Both fields are required.";
 } else {
