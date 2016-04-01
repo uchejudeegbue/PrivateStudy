@@ -126,7 +126,7 @@ echo "<br>";
 // It just that $x was changed to $y
 
 foreach ($provisionedActivities as $y){
-    print "<p> $y </P>";
+
 }
 echo "<br>";
 /* Create a line of code that does each of the following, followed
@@ -139,7 +139,9 @@ echo "<br>";
 
 //2. Suasage Rolls are to be removed.
 unset ($provisionedActivities [2]);
-echo $provisionedActivities [0] . ", " . $provisionedActivities [1] . ", " . $provisionedActivities[2];
+echo $provisionedActivities [0] . ", " . $provisionedActivities [1] . $provisionedActivities[2];
+echo "<br>";
+echo "<br>";
 echo "<br>";
 
 
