@@ -50,8 +50,7 @@ echo "<br>";
 echo "<br>";
 //Consider this example on switch statement from the lab
 
-$numberOfHobbits = 4;
-
+$numberOfHobbits = 3;
 switch ($numberOfHobbits){
     case 1:
         echo "1 sad Hobbit";
