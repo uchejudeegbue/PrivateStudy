@@ -20,6 +20,9 @@ $name = "Uju Uche-Egbue";
 if ($name == "Uju Uche-Egbue"){
     echo "You are my lovely wife";
 }
+else {
+    echo "I dont know you";
+}
 
 
 
