@@ -108,7 +108,7 @@ echo $cars[0] . ", " . $cars[1] . ", " . $cars[2]  . $cars[3];
 echo "<br>";
 
 //Consider and do this exercise below from the lab
-/* n an attempt to stop the chaos that is engulfing Aberdeen, the provision of specs, mugs, and sausage rolls is
+/* In an attempt to stop the chaos that is engulfing Aberdeen, the provision of specs, mugs, and sausage rolls is
 being examined. Create a web page then initiate an array called $provisionedActivities. In this array store the
 stings Specs, Drugs, and Rock and Roll.*/
 
@@ -124,8 +124,8 @@ echo "<br>";
 
 // The above printing code is the same as the one below
 
-foreach ($provisionedActivities as $x){
-    print "<p> $x </P>";
+foreach ($provisionedActivities as $y){
+    print "<p> $y </P>";
 }
 echo "<br>";
 /* Create a line of code that does each of the following, followed
