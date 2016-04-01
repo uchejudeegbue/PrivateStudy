@@ -88,21 +88,64 @@ switch ($wantedGood){
 echo "<br>";
 
 // Arrays:
-$cars = array("Volvo", "BMW", "Toyota"); //declares the array
+$cars = array("Volvo", "BMW", "Toyota", "Peugeot"); //declares the array
 echo $cars[0];
 echo "<br>";
 echo $cars [1];
 echo "<br>";
 echo "I like " . $cars[0] . " and " . $cars[2] . ".";
 echo "<br>";
-$cars [1] = Honda;
+$cars [1] = Honda;// modifies position 1 (BMW) to (Honda)
 echo "<br>";
 echo $cars [1];
-
+echo"<br>";
 $x = 6;
 echo $x;
 echo "<br>";
+unset($cars[3]); // removes the array in index position 3
+echo "<br>";
 
+//Consider and do this exercise below from the lab
+/* n an attempt to stop the chaos that is engulfing Aberdeen, the provision of specs, mugs, and sausage rolls is
+being examined. Create a web page then initiate an array called $provisionedActivities. In this array store the
+stings Specs, Drugs, and Rock and Roll.*/
+
+$provisionedActivities = array ("Specs", "Mugs", "Suasage Roll");
+echo $provisionedActivities [2];
+echo "<br>";
+
+//Print out the array using code similar to the following:
+foreach ($provisionActivities as $x){
+    echo $x;
+}
+echo "<br>";
+
+// The above printing code is the same as the one below
+
+foreach ($provisionedActivities as $x){
+    print "<p> $x </P>";
+}
+
+/* Create a line of code that does each of the following, followed
+by a print statement of the array as a whole*/
+
+//1. Mugs are being modified to the friendly alternative of hugs
+$provisionedActivities [1] = "hugs";
+echo "Mugs are being modified to the friendly alternative of " . $provisionedActivities [1];
+echo "<br>";
+
+//2. Suasage Rolls are to be removed.
+unset ($provisionedActivities [2]);
+echo $provisionedActivities [0] . ", " . $provisionedActivities [1] . ", " . [2];
+echo "<br>";
+
+
+//Array Functions
+
+//The array count
+// This used to return the length (the number of elements) of an array
+$alpha = array ("A", "B", "C", "D");
+echo count ($alpha);
 
 ?>
 </body>
