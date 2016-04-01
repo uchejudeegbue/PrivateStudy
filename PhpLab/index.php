@@ -91,9 +91,13 @@ echo "<br>";
 $cars = array("Volvo", "BMW", "Toyota"); //declares the array
 echo $cars[0];
 echo "<br>";
+echo $cars [1];
+echo "<br>";
 echo "I like " . $cars[0] . " and " . $cars[2] . ".";
 echo "<br>";
 $cars [1] = Honda;
+echo "<br>";
+echo $cars [1];
 
 $x = 6;
 echo $x;
