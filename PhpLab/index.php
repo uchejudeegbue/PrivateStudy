@@ -72,7 +72,7 @@ and prints out how old you have to be.*/
 
 $wantedGood = specs;
 
-switch (wantedGood){
+switch ($wantedGood){
     case specs:
         echo "You have to be 16 to buy specs";
         break;
