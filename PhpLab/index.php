@@ -46,6 +46,8 @@ else if (($myage > 18)&& ($myage <= "21")) {
 else if ($myage > 21){
     echo "buy sussage rolls";
 }
+echo "<br>";
+echo "<br>";
 //Consider this example on switch statement from the lab
 
 $numberOfHobbits = 4;
