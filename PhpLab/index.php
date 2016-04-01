@@ -95,7 +95,7 @@ echo $cars [1];
 echo "<br>";
 echo "I like " . $cars[0] . " and " . $cars[2] . ".";
 echo "<br>";
-$cars [1] = Honda;// modifies position 1 (BMW) to (Honda)
+$cars [1] = "Honda";// modifies position 1 (BMW) to (Honda)
 echo "<br>";
 echo $cars [1];
 echo"<br>";
