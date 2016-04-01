@@ -102,7 +102,8 @@ echo"<br>";
 $x = 6;
 echo $x;
 echo "<br>";
-unset($cars[3]); // removes the array in index position 3
+unset($cars[2]); // removes the array in index position 2
+echo $cars[0] . ", " . $cars[1] . ", " . $cars[2] . "," . $cars[3];
 echo "<br>";
 
 //Consider and do this exercise below from the lab
