@@ -50,14 +50,17 @@ echo "<br>";
 echo "<br>";
 //Consider this example on switch statement from the lab
 
-$numberOfHobbits = 3;
+$numberOfHobbits = 1;
 switch ($numberOfHobbits){
     case 1:
         echo "1 sad Hobbit";
+        break;
     case 2:
         echo "2 happy Hobbits";
+        break;
     case 3:
         echo "3 hobbits are crowd";
+        break;
     default:
         echo "All the hobbits have gone home";
 }
@@ -72,10 +75,13 @@ $wantedGood = specs;
 switch (wantedGood){
     case specs:
         echo "You have to be 16 to buy specs";
+        break;
     case mugs:
         echo "You have to be 18 to buy mugs";
+        break;
     case sussagerolls:
         echo "You have to be 21 to buy sussage rolls";
+        break;
     default:
         echo "There is nothing to buy";
 }
