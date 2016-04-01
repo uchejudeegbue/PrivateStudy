@@ -85,6 +85,15 @@ switch ($wantedGood){
     default:
         echo "There is nothing to buy";
 }
+echo "<br>";
+
+// Arrays:
+
+$cars = arrays("Volve", "BMW", "Toyota"); //declares the array
+echo $cars [0];
+
+
+
 ?>
 </body>
 </html>
