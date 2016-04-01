@@ -1,3 +1,9 @@
+<!Doctype html>
+<html>
+<head>
+
+</head>
+<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -11,3 +17,5 @@ echo $x;
 
 
 ?>
+</body>
+</html>
