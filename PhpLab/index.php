@@ -16,7 +16,7 @@ echo $x;
 echo "<br>";
 echo "Hello, " . " " . "World" . "!"; //the period . is used to concanate the strings
 echo "<br>";
-//Consider this example from the lab
+//Consider this example on if else statement from the lab
 $name = "Uju Uche-Egbue";
 if ($name == "Uju Uche-Egbue"){
     echo "You are my lovely wife";
@@ -25,7 +25,7 @@ else {
     echo "I dont know you";
 }
 echo "<br>";
-/*Consider and do this exercise from the lab
+/*Consider and do this if else statement exercise from the lab
 Aberdeen is the home of specs,  ugs and sussage rolls. You are allowed to:
 - buy specs if you are over 16,
 - buy mugs if you are over 18,
@@ -46,7 +46,37 @@ else if (($myage > 18)&& ($myage <= "21")) {
 else if ($myage > 21){
     echo "buy sussage rolls";
 }
+//Consider this example on switch statement from the lab
 
+$numberOfHobbits = 2;
+
+switch ($numberOfHobbits){
+    case 1:
+        echo "1 sad Hobbit";
+    case 2:
+        echo "2 happy Hobbits";
+    case 3:
+        echo "3 hobbits are crowd";
+    default:
+        echo "All the hobbits have gone home";
+}
+/* Consider and do this switch statement from the lab
+The people of Aberdeen are still struggling to understand at what age they are allowed to have specs, mugs an sussage
+rolls. Make a webpage that stores a variable called $wantedGood. Create a switch statement that takes this variable
+and prints out how old you have to be.*/
+
+$wantedGood = mugs;
+
+switch (wantedGood){
+    case 1:
+        echo "You have to be 16 to buy specs";
+    case 2:
+        echo "You have to be 18 to buy mugs";
+    case 3:
+        echo "You have to be 21 to buy sussage rolls";
+    default:
+        echo "There is nothing to buy";
+}
 ?>
 </body>
 </html>
