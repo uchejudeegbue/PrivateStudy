@@ -139,7 +139,7 @@ echo "<br>";
 
 //2. Suasage Rolls are to be removed.
 unset ($provisionedActivities [2]);
-echo $provisionedActivities [0] . ", " . $provisionedActivities [1] . ", " . [2];
+echo $provisionedActivities [0] . ", " . $provisionedActivities [1] . ", " . $provisionedActivities[2];
 echo "<br>";
 
 
