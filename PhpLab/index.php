@@ -118,7 +118,7 @@ echo "<br>";
 
 //Print out the array using code similar to the following:
 foreach ($provisionActivities as $x){
-    echo $x;
+    echo "$x";
 }
 echo "<br>";
 
@@ -126,7 +126,7 @@ echo "<br>";
 // It just that $x was changed to $y
 
 foreach ($provisionedActivities as $y){
-
+    print "<p> $y </P>";
 }
 echo "<br>";
 /* Create a line of code that does each of the following, followed
