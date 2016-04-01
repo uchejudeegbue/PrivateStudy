@@ -122,7 +122,8 @@ foreach ($provisionActivities as $x){
 }
 echo "<br>";
 
-// The above printing code is the same as the one below
+// The above printing code is the same as the one below.
+// It just that $x was changed to $y
 
 foreach ($provisionedActivities as $y){
     print "<p> $y </P>";
