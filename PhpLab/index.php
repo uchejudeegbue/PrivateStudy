@@ -13,6 +13,14 @@
  */
 $x = "Hello World";
 echo $x;
+echo "<br>";
+echo "Hello, " . " " . "World" . "!"; //the period . is used to concanate the strings
+echo "<br>";
+$name = "Uju Uche-Egbue";
+if ($name == "Uju Uche-Egbue"){
+    echo "You are my lovely wife";
+}
+
 
 
 
