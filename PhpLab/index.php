@@ -145,6 +145,7 @@ echo "<br>";
 // This used to return the length (the number of elements) of an array
 $alpha = array ("A", "B", "C", "D");
 echo count ($alpha);
+echo "<br>";
 
 //The array sort (an array function)
 //sort($array); sorts array in ascending order
