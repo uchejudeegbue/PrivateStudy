@@ -60,6 +60,7 @@ switch ($numberOfHobbits){
     default:
         echo "All the hobbits have gone home";
 }
+echo "<br>";
 /* Consider and do this switch statement from the lab
 The people of Aberdeen are still struggling to understand at what age they are allowed to have specs, mugs an sussage
 rolls. Make a webpage that stores a variable called $wantedGood. Create a switch statement that takes this variable
@@ -68,11 +69,11 @@ and prints out how old you have to be.*/
 $wantedGood = mugs;
 
 switch (wantedGood){
-    case 1:
+    case specs:
         echo "You have to be 16 to buy specs";
-    case 2:
+    case mugs:
         echo "You have to be 18 to buy mugs";
-    case 3:
+    case sussagerolls:
         echo "You have to be 21 to buy sussage rolls";
     default:
         echo "There is nothing to buy";
