@@ -125,7 +125,7 @@ echo "<br>";
 foreach ($provisionedActivities as $x){
     print "<p> $x </P>";
 }
-
+echo "<br>";
 /* Create a line of code that does each of the following, followed
 by a print statement of the array as a whole*/
 
