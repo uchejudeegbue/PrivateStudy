@@ -24,6 +24,7 @@ if ($name == "Uju Uche-Egbue"){
 else {
     echo "I dont know you";
 }
+echo "<br>";
 /*Consider and do this exercise from the lab
 Aberdeen is the home of specs,  ugs and sussage rolls. You are allowed to:
 - buy specs if you are over 16,
@@ -34,8 +35,7 @@ PHP to print out their name and use an if/elseif/else statement to print out whi
 allowed to buy*/
 
 $myage = "16";
-$myage = "18";
-$myage = "21";
+
 
 if ($myage > "16"){
     echo "buy specs";
