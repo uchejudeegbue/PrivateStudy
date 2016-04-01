@@ -141,10 +141,16 @@ echo "<br>";
 
 //Array Functions
 
-//The array count
+//The array count (an array function)
 // This used to return the length (the number of elements) of an array
 $alpha = array ("A", "B", "C", "D");
 echo count ($alpha);
+
+//The array sort (an array function)
+//sort($array); sorts array in ascending order
+
+$bookPubs = array("Macmillian", "Panter", "Corgi", "Evans");
+echo sort($bookPubs);
 
 ?>
 </body>
