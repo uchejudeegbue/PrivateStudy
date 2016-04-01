@@ -94,7 +94,7 @@ echo "<br>";
 echo "I like " . $cars[0] . "and" . $cars[2] . ".";
 echo "<br>";
 
-$x = 5;
+$x = 6;
 echo $x;
 echo "<br>";
 
