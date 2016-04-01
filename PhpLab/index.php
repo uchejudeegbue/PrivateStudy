@@ -86,15 +86,16 @@ switch ($wantedGood){
         echo "There is nothing to buy";
 }
 echo "<br>";
-
+$x = 5;
+echo $x;
+echo "<br>";
 // Arrays:
 
 $cars = arrays("Volvo", "BMW", "Toyota"); //declares the array
 echo $cars[0];
 echo "<br>";
 echo "I like " . $cars[0] . "and" . $cars[2] . ".";
-$x = 5;
-echo $x;
+
 
 
 ?>
