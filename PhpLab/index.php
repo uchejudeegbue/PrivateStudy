@@ -151,7 +151,8 @@ echo "<br>";
 //sort($array); sorts array in ascending order
 
 $bookPubs = array("Macmillian", "Panter", "Corgi", "Evans");
-echo sort($bookPubs);
+sort($bookPubs);
+echo join(", ", $bookPubs);
 
 ?>
 </body>
