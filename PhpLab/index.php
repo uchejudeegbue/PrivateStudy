@@ -34,7 +34,7 @@ Create a web page that stores a person's age at the top in a variable called $my
 PHP to print out their name and use an if/elseif/else statement to print out which of the three items they are
 allowed to buy*/
 
-$myage = "18";
+$myage = "19";
 
 
 if ($myage > "16"){
