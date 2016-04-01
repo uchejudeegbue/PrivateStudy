@@ -93,6 +93,7 @@ echo $cars[0];
 echo "<br>";
 echo "I like " . $cars[0] . " and " . $cars[2] . ".";
 echo "<br>";
+$cars [1] = Honda;
 
 $x = 6;
 echo $x;
