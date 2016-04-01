@@ -48,7 +48,7 @@ else if ($myage > 21){
 }
 //Consider this example on switch statement from the lab
 
-$numberOfHobbits = 2;
+$numberOfHobbits = 4;
 
 switch ($numberOfHobbits){
     case 1:
