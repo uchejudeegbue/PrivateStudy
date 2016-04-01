@@ -89,8 +89,8 @@ echo "<br>";
 
 // Arrays:
 
-$cars = arrays("Volve", "BMW", "Toyota"); //declares the array
-echo $cars [0];
+$cars = arrays("Volvo", "BMW", "Toyota"); //declares the array
+echo $cars[0];
 
 
 
