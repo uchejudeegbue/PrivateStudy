@@ -66,7 +66,7 @@ The people of Aberdeen are still struggling to understand at what age they are a
 rolls. Make a webpage that stores a variable called $wantedGood. Create a switch statement that takes this variable
 and prints out how old you have to be.*/
 
-$wantedGood = mugs;
+$wantedGood = specs;
 
 switch (wantedGood){
     case specs:
