@@ -37,7 +37,7 @@ allowed to buy*/
 $myage = "19";
 
 
-if ($myage > "16"){
+if (($myage > "16")&& ($myage <= "18")){
     echo "buy specs";
 }
 else if ($myage > 18) {
