@@ -153,6 +153,13 @@ echo "<br>";
 $bookPubs = array("Macmillian", "Panter", "Corgi", "Evans");
 sort($bookPubs);
 echo join(", ", $bookPubs);
+echo "<br>";
+echo"<br>";
+
+//rsort($array); sorts array in descending order
+$bookPubs = array ("Macmillian", "Panter", "Corgi", "Evans");
+rsort ($bookPubs);
+echo join (", ", $bookPubs);
 
 ?>
 </body>
