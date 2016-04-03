@@ -6,6 +6,6 @@
 </head>
 <body>
 
-<h1> Welcome to PHP email user's page</h1>
+<h2> Welcome to PHP email user's page.</h2>
 </body>
 </html>
