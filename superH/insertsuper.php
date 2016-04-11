@@ -13,7 +13,9 @@
             <li><a href="insertsuper.php">Insert Super Hero</a></li>
             <li><a href="displaysuper.php">Display Super Hero</a></li>
             <li><a href="insertbattle.php">Insert Battle</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Display Battle</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Display Battle</a></li>
+
             <ul class="dropdown-menu">
                 <li><a href="allbattle.php">All Battle</a></li>
                 <li><a href="supermanbattle.php">Superman Battle</a></li>
@@ -28,8 +30,7 @@
 
 <div class="container displaybattle">
     <div class="row">
-        <div
-            class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
             <form action="process.php" method="post">
                 <div class="form-group">
                     <label for="personalname">Personal Name</label>
