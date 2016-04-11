@@ -28,7 +28,7 @@
 
 <div class="container displaybattle">
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 colxs-offset-3">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
             <form action="process.php" method="post">
                 <div class="form-group">
                     <label for="personalname">Personal Name</label>
@@ -45,9 +45,15 @@
                 </div>
 
                 <div class="form-group">
+                    <Label for="gender">Female</Label>
+                    <input class="form-control" type="radio" name="gender" value="Female">
+                </div>
+
+                <div class="form-group">
                     <label for="power">Main Super Hero Power</label>
                     <input type="text" class="form-control" name="power" placeholder="Enter main super hero power">
                 </div>
+
 
                 <div class="form-group">
                     <input class="btn btn-primary form-control" type="submit" value="submit">
