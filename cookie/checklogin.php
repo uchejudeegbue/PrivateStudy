@@ -9,6 +9,6 @@ if ($username == "username" && $password =="password");{
     setcookie ('access_level_cookie', 'standarduser');
 }
 
-header('location:checklogin.php');
+header('location:login.php');
 
 ?>
