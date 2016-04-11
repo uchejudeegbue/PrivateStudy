@@ -32,8 +32,27 @@
             <form action="process.php" method="post">
                 <div class="form-group">
                     <label for="personalname">Personal Name</label>
-                    <input type="text" class="form-control" name="personalname" placeholder="Please type Personal Name"/>
+                    <input type="text" class="form-control" name="personalname" placeholder="Enter Personal Name"/>
                 </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Male</label>
+                    <input type="radio" class="form-control" name="gender" value="male"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="power">Main Super Hero Power</label>
+                    <input type="text" class="form-control" name="power" placeholder="Enter main super hero power">
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-primary form-control" type="submit" value="submit">
+                </div>
+
             </form>
 
         </div>
