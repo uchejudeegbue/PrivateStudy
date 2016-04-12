@@ -5,7 +5,7 @@ define ("USERNAME", 'b1463873078bfe');
 define ("PASSWORD", 'b3b9d9ca');
 define ("DATABASE", 'superH');
 
-$db = mysqli_connect(SERVER, USERNEM, PASSWORD, DB);
+$db = mysqli_connect(SERVER, USERNAME, PASSWORD, DB);
 
 // test if connection was established and print any errors
 

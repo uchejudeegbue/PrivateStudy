@@ -14,7 +14,7 @@
             <li><a href="displaysuper.php">Display Super Hero</a></li>
             <li><a href="insertbattle.php">Insert Battle</a></li>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">Display Battle</a></li>
+                <a class="dropdown-toggle" data-toggle="dropdown">Display Battle</a>
 
             <ul class="dropdown-menu">
                 <li><a href="allbattle.php">All Battle</a></li>
@@ -23,6 +23,7 @@
                 <li><a href="antmanbattle">Antman Battle</a></li>
 
             </ul>
+            </li>
         </ul>
 
     </div>
