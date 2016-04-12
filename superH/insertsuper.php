@@ -39,10 +39,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="gender">Gender</label>
-                </div>
-
-                <div class="form-group">
                     <label for="gender">Male</label>
                     <input type="radio" class="form-control" name="gender" value="male"/>
 
