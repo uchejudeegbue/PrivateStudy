@@ -1,7 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: UCHE EGBUE BENDAC
- * Date: 4/10/2016
- * Time: 8:05 PM
- */
+
+define ("SERVER", 'ap-cdbr-azure-east-c.cloudapp.net');
+define ("USERNAME", 'b1463873078bfe');
+define ("PASSWORD", 'b3b9d9ca');
+define ("DATABASE", 'superH');
+
+$db = mysqli_connect(SERVER, USERNAME, PASSWORD, DB);
+
+// test if connection was established and print any errors
+
+if (!db){
+    die ("connection failed:" . mysqli_connect_error ());
+}else {
+
+}
+?>
