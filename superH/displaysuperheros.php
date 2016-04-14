@@ -12,19 +12,18 @@
 </header>
 <main>
     <?php
-    include ("$db_connect.php");
+    include("$db_connect.php");
     $sql_query = "SELECT * FROM superheros";
     $result = $db->query($sql_query);
-    while($row = $result->fetch_array())
- {
-    $firstname = $row['firstname'];
-    $lastname = $row['lastname'];
-    $mainSuperPower = $row['mainSuperPower'];
-    echo "<article>
+    while ($row = $result->fetch_array()) {
+        $firstname = $row['firstname'];
+        $lastname = $row['lastname'];
+        $mainSuperPower = $row['mainSuperPower'];
+        echo "<article>
         <h3>{$firstname}{lastname}</h3>
         <p>This Superheros main power is <strong> {$mainSuperPower}</strong></p>
     </article>";
- }
+    }
     ?>
 </main>
 
