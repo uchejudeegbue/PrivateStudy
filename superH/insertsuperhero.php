@@ -6,10 +6,10 @@ $lastname = $_POST["lastname"];
 $superpower = $_POST["superpower"];
 
 $sql = "INSERT INTO superheros(firstname, lastname, mainSuperPower) VALUES ('$firstname', '$lastname', '$superpower' )";
- if (mysqli_query($db, $sql)){
+if (mysqli_query($db, $sql)) {
 
- }else {
-     echo "Error: " . $sql . "<br>" . mysqli_error($db);
- }
-header ("location: index.php");
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($db);
+}
+header("location: index.php");
 ?>
