@@ -1,9 +1,9 @@
 <?php
-include($db_connect.php);
+include(db_connect.php);
 $superhero = $_POST ["superhero"];
 $villan = $_POST ["villan"];
 
-$sql = "INSERT INTO battle (superhero, villanfought) VALUES {'superhero', 'villan'}";
+$sql = "INSERT INTO battles (superhero, villanfought) VALUES {'$superhero', '$villan'}";
 
 if (mysqli_query($db, $sql)){
 

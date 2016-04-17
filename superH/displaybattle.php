@@ -14,7 +14,7 @@
 
 <main>
     <?php
-    include("$db_connect.php");
+    include("db_connect.php");
 
     if (isset($_GET['id'])){
         $superhero = $_GET['id'];
@@ -30,8 +30,8 @@
         $lastname = $row ['lastname'];
         $mainsuperpower = $row ['mainsuperpower'];
         $villanfought = $row ['villanfought'];
-        echo "<article> <p>The Superhero known as <strong>{$firstname}</strong> recently fought <strong>{$villanfought}</strong>
-using <strong>{mainsuperpower}</strong></p>";
+        echo "<article> <p>The Superhero known as <strong>{$firstname}{$lastname}</strong> recently fought <strong>{$villanfought}</strong>
+using <strong>{$mainsuperpower}</strong></p>";
     }
     ?>
 </main>
