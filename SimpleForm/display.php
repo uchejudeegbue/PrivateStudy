@@ -22,8 +22,7 @@ include ("db_connection.php");
 
     }
 
-
-    ?>
+   ?>
 </ul>
 </body>
 
