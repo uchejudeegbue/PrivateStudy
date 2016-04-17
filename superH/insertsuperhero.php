@@ -3,7 +3,7 @@ include("db_connect.php");
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$superpower = $_POST["superpower"];
+$mainsuperpower = $_POST["superpower"];
 
 $sql = "INSERT INTO superheros(firstname, lastname, mainSuperPower) VALUES ('$firstname', '$lastname', '$superpower' )";
 if (mysqli_query($db, $sql)) {
