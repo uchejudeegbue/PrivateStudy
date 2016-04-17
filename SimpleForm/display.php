@@ -10,7 +10,9 @@ include ("db_connection.php");
 </head>
 <body>
 
-<h1>The following names are registered on the site</h1>
+<h2>User List</h2>
+<p>The following names are registered on the site</p>
+
 <ul>
     <?php
     $sql_query = "SELECT * FROM names";
