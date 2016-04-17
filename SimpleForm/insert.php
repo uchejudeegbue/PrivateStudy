@@ -13,6 +13,6 @@ if (mysqli_query($db, $sql)){
 else {
     echo "ERROR: " . $sql . $mysqli_error($db);
 }
-header("location: display.php");
+header("location: index.php");
 
 ?>
