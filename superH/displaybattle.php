@@ -17,8 +17,8 @@
     include("$db_connect.php");
 
     if (isset($_GET['id'])){
-        $superHero = $_GET['id'];
-        $sql_query = "SELECT * FROM superherobattles WHERE superHero = $superHero";
+        $superhero = $_GET['id'];
+        $sql_query = "SELECT * FROM superherobattles WHERE superhero = $superhero";
     }
     else{
     $sql_query = "SELECT * FROM superherobattles";
@@ -28,10 +28,10 @@
     while ($row = $result-> fetch_array()){
         $firstname = $row ['firstname'];
         $lastname = $row ['lastname'];
-        $mainSuperPower = $row ['mainSuperPower'];
-        $villanFought = $row ['villanFought'];
-        echo "<article> <p>The Superhero known as <strong>{$firstname}</strong> recently fought <strong>{$villanFought}</strong>
-using <strong>{mainSuperPower}</strong></p>";
+        $mainsuperpower = $row ['mainsuperpower'];
+        $villanfought = $row ['villanfought'];
+        echo "<article> <p>The Superhero known as <strong>{$firstname}</strong> recently fought <strong>{$villanfought}</strong>
+using <strong>{mainsuperpower}</strong></p>";
     }
     ?>
 </main>

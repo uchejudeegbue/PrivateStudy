@@ -22,7 +22,7 @@
         while ($rwo = $result->fetch_array()) {
             $firstname = $row['firstname'];
             $lastname = $row['lastname'];
-            $mainSuperPower = $row ['mainSuperPower'];
+            $mainsuperpower = $row ['mainsuperpower'];
             echo "<option value={$superHero}>{$firstname}{$lastname}</option>";
             }
 ?>

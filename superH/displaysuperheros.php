@@ -18,10 +18,10 @@
     while ($row = $result->fetch_array()) {
         $firstname = $row['firstname'];
         $lastname = $row['lastname'];
-        $mainSuperPower = $row['mainSuperPower'];
+        $mainsuperpower = $row['mainsuperpower'];
         echo "<article>
-        <h3>{$firstname}{lastname}</h3>
-        <p>This Superheros main power is <strong> {$mainSuperPower}</strong></p>
+        <h3>{$firstname}{$lastname}</h3>
+        <p>This Superheros main power is <strong> {$mainsuperpower}</strong></p>
     </article>";
     }
     ?>

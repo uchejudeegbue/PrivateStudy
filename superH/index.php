@@ -10,10 +10,10 @@
 </header>
 <p>What would you like to do?</p>
 <ul>
-    <li><a href="insertSuperhero.php">Insert a Superhero</a></li>
-    <li><a href="displaySuperheros.php"> Display all Superheros</a></li>
+    <li><a href="insertsuperhero.php">Insert a Superhero</a></li>
+    <li><a href="displaysuperheros.php"> Display all Superheros</a></li>
     <li><a href="battle.php">Insert a Battle</a></li>
-    <li><a href="displayBattles.php">Display all Battles</a></li>
+    <li><a href="displaybattles.php">Display all Battles</a></li>
 </ul>
 <?php
 include("db_connect.php");
@@ -22,8 +22,8 @@ $result = $db->query($sql_query);
 while ($row = $result->fetch_array()) {
     $firstname = $row['firstname'];
     $lastname = $row['lastname'];
-    $id = $row ['superHero'];
-    echo "<li><a href='displayBattles.php?id={$id}'>Battles for {$firstname} {$lastname}</a>";
+    $id = $row ['superhero'];
+    echo "<li><a href='displaybattles.php?id={$id}'>Battles for {$firstname} {$lastname}</a>";
 }
 ?>
 
