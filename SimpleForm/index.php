@@ -13,7 +13,7 @@ include ("db_connection.php");
 <h1>The following names are registered on the site</h1>
 <ul>
 <?php
-$sql_query = "SELECT * FROM names";
+
 $result = $db->query($sql_query);
 while ($row = $result ->fetch_array()){
     $firstname = $row['firstname'];
