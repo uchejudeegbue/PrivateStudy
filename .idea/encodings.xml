@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/bugTrack/README.md" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/Test.php" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/adminer.php" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/connect.php" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/display.php" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/index.html" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/bugTrack/insert.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/README.md" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/adminer.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/connect.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/display.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/index.html" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/index.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/simpleforms/insert.php" charset="windows-1252" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
