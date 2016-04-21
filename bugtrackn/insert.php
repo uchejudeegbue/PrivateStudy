@@ -9,10 +9,12 @@ if (empty($firstname)||(empty($lastname))){
     else {
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
+
+        $sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
     }
 
 
-        $sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
+
 
         if (mysqli_query($db,$sql)){
             header ("location: display.php");
