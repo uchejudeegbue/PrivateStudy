@@ -6,7 +6,7 @@
 
 include ("connect.php");
 
-$sql_query = "SELECT * FROM testing";
+$sql_query = "SELECT * FROM users";
 
 $result = mysqli_query($db, $sql_query);
 
