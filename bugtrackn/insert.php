@@ -10,14 +10,14 @@ if (empty($firstname)||(empty($lastname))){
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
 
-        $sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
-    }
 
+    }
+$sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
 
 
 
         if (mysqli_query($db,$sql)){
-            header ("location: display.php");
+            header ("location:display.php");
         }
         else {
             echo "Error: " . $sql . "<br>" . mysqli_error ($db);
