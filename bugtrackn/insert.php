@@ -10,7 +10,7 @@ if (empty($_POST['$firstname'])||(empty($_POST['$lastname']))){
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
 
-        $sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
+        $sql = "INSERT INTO users ('firstname', 'lastname') VALUES ('$firstname', '$lastname')";
         mysqli_query ($db, $sql);
     }
 
