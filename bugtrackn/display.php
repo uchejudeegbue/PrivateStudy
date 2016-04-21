@@ -15,7 +15,7 @@ while ($row = $result->fetch_array()){
     $lastname = $row['lastname'];
 
 }
-echo "My name is" . "{$firstname}" . " " . "{$lastname}" . "<br>";
+echo "My name is " . "{$firstname}" . " " . "{$lastname}" . "<br>";
 
 
 
