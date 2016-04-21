@@ -1,8 +1,10 @@
+
+
 .container{
     float: left;
     width:200px;
     padding-right: 10px;
-    border: dotted;
+    background-color: aqua;
     margin-right: 20px;
     height: 300px;
 
@@ -11,17 +13,20 @@ body{
     max-width:600px;
     margin-left:auto;
     margin-right: auto;
-    border: dotted;
+
 }
 #logo{
-    width:100px;
-    height: 100px;
+    width:120px;
+    height: 120px;
     float: left;
+    mar
 }
 footer{
-    border: dotted;
+    height: 70px;
     clear: both;
     text-align:center;
+    background-color: green;
+    padding-top: 10px;
 }
 #para{
     border: dotted;
@@ -30,7 +35,8 @@ footer{
 
 }
 header{
-    border:dotted;
+    background-color:lightblue;
+    padding: 2px;
 }
 a{
     text-decoration: none;
