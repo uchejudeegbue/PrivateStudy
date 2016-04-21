@@ -1,43 +1,86 @@
+* {
+    padding:0;
+    margin:0;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+body{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height:420px;
 
+}
 
-.container{
+.nav{
     float: left;
     width:200px;
-    padding-right: 10px;
+    padding-right: 2px;
     background-color: aqua;
-    margin-right: 20px;
+    margin-right: 5px;
     height: 300px;
+    margin-bottom:2px;
+    position:relative;
+ }
 
+.nav li ul {
+    position: absolute;
+    visibility: hidden;
 }
-body{
-    max-width:600px;
-    margin-left:auto;
-    margin-right: auto;
 
+.nav li:hover {
+    background-color: lightskyblue;
 }
+
+.nav li:hover ul {
+    visibility: visible;
+}
+
 #logo{
     width:120px;
-    height: 120px;
+    height: 100px;
     float: left;
-    mar
+    margin-right: 2px;
+    padding: 2px;
 }
+
+
 footer{
-    height: 70px;
+    height: 50px;
     clear: both;
     text-align:center;
     background-color: green;
     padding-top: 10px;
+    margin: 2px;
 }
-#para{
-    border: dotted;
+.para{
+    background-color: linen;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    margin-bottom:2px;
+    margin-top:2px;
+    margin-left: 2px;
+    height:300px;
+    text-align:justify;
     height: 300px;
-
-
 }
+
 header{
     background-color:lightblue;
     padding: 2px;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+
+header h1{
+    font-size: 30px;
+
+}
+
 a{
     text-decoration: none;
     padding: 10px;
@@ -46,6 +89,8 @@ a{
 li{
     list-style: none;
     padding: 5px;
-
-
 }
+#p1{
+    font-size: 20px;
+}
+

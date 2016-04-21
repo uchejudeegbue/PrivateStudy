@@ -8,14 +8,17 @@
 <body>
 
 <header>
-    <img id="logo" src="logo.png">
+    <img id="logo" src="logo.png" alt="logo"/>
+
 
     <h1>Bug Tracker</h1>
 
-    <h2>Keeping track of all the pesky little bugs</h2>
+    <p id = p1>Keeping track of all the pesky little bugs</p>
+
 </header>
 <content>
-    <nav class="container">
+    <div class="nav">
+    <nav>
         <ul>
         <li><a href="bugs.html">All Bug Items</a>
             <ul>
@@ -29,11 +32,14 @@
         <li><a href="insertbug.html">Insert Bug</a></li>
         </ul>
     </nav>
-    <br><br>
+        </div>
 
-    <form id="para">
-        <label>Bug Name</label><input type="text" name="bugname"><br><br><br>
-        <label>Bug Summary</label><textarea rows="5" cols="50"></textarea><br><br>
+<div class="para">
+    <form>
+        <label>Bug Name</label>
+        <input type="text" name="bugname"><br><br>
+        <label>Bug Summary</label>
+        <textarea rows="3" cols="20"></textarea><br><br>
         <label>Bug Category
         <select name="Bug">
             <option value="Android">Android</option>
@@ -44,12 +50,12 @@
         <br>
 
     </form>
-
+</div>
 
 </content>
 <footer>
     Designed by Uche Jude Egbue, 2016
 </footer>
-
+</div>
 </body>
 </html>
