@@ -2,7 +2,7 @@
 
 include("connect.php");
 
-if (empty($firstname)||(empty($lastname))){
+if (empty($_POST['$firstname']||(empty($_POST['$lastname'])){
     echo "Both fields are required";
 
 }
