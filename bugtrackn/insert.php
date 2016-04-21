@@ -12,7 +12,7 @@ if (empty($firstname)||(empty($lastname))){
     }
 
 
-        $sql = "INSERT INTO testing (firstname, lastname) VALUES ('$firstname', '$lastname')";
+        $sql = "INSERT INTO users (firstname, lastname) VALUES ('$firstname', '$lastname')";
 
         if (mysqli_query($db,$sql)){
 
@@ -21,9 +21,6 @@ if (empty($firstname)||(empty($lastname))){
             echo "Error: " . $sql . "<br>" . mysqli_error ($db);
         }
 header ("location: display.php");
-
-
-
 
 
 ?>
