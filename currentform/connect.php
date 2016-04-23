@@ -11,4 +11,15 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
+/* You can also use this code below to check if your connection was successful
+if ($db) {
+      echo "Connection is succesful";
+}
+else {
+    "Error: " . mysqli_error ($db);
+}
+  */
+
 ?>
+
+
