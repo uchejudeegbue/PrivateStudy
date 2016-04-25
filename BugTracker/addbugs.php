@@ -64,6 +64,24 @@
 
 include ('connect.php');
 
-if (error ($_POST[]))
+if (empty ($_POST['bugName'])||(empty ($_POST['bugSummary']))||(empty($_POST['bugCategory']))){
+    echo "All fields are required";
+}
+else {
+    $bugName = $_POST['bugName'];
+    $bugSummary = $_POST ['budSummary'];
+    $bugCategory = $_POST ['bugCategory'];
 
+    $sql = "INSERT INTO bugtracker (bugName, bugSummary, bugCategory) VALUES ('$bugName', '$bugSummary', '$bugCategory')";
+    mysqli_query ($db, $sql);
+}
+
+
+
+if (mysqli_query($db,$sql)){
+    header ("location:display.php");
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error ($db);
+}
 ?>
