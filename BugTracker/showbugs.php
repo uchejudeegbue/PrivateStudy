@@ -34,22 +34,32 @@
 
 
         <div class="para">
-            <form>
-                <Label for>Bug Name</Label><br>
-                <input type="text" name="Bug Name" required><br>
-                <label for>Bug Category</label><br>
-                <input type="text" name="Bug Category" required><br>
-                <label for>Bug Summary</label><br>
-                <input type="text" name="Bug Summary" required>
-                <br>
-                <hr>
-                <Label for>Bug Name</Label><br>
-                <input type="text" name="Bug Name"><br>
-                <label for>Bug Category</label><br>
-                <input type="text" name="Bug Category"><br>
-                <label for>Bug Summary</label><br>
-                <input type="text" name="Bug Summary">
-            </form>
+            <?php
+            $sql = "SELECT bugName, bugSummary, bugCategory
+            FROM bugtracker ";
+            $result = mysqli_query($db,$sql);//procedural programming
+            echo "
+            <table>
+                <tr>
+                    <th>bugName </th>
+                    <th>bugSummary</th>
+                    <th>bugCategory</th>
+
+                </tr> ";
+
+                if(mysqli_num_rows($result)>0){
+                while($row = mysqli_fetch_assoc($result)){
+                echo "<tr>
+                    <td>{$row['bugName']}</td>
+                    <td>{$row['bugSummary']}</td>
+                    <td>{$row['bugCategory']}</td>
+
+                </tr>";
+                }
+                }
+                echo "</table>";
+?>
+
         </div>
 
     </contect>
@@ -60,21 +70,6 @@
 </body>
 </html>
 
-<?php
-
-include ("connect.php");
-
-$sql_query = "SELECT * FROM bugtracker";
-
-$result = $db->query ($sql_query);
-
-while ($row = $result->fetch_array()){
-    $bugName = $row['bugName'];
-    $bugSummary = $row['bugSummary'];
-    $bugCategory = $row['bugCategory'];
-
-}
-echo "My name is " . "{$bugName}" . " " . "{$bugSummary}" . " " . "{$bugCategory}" . "<br>";
 
 
 ?>
