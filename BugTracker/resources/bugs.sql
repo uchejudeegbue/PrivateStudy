@@ -19,4 +19,4 @@ INSERT INTO `bugtracker` (`bugID`, `bugName`, `bugSummary`, `bugCategory`) VALUE
 (31,	'Dr Crabbs Evil Bug',	'The DCEB is a very powerful and fictional bug that infects iOS devices and does absolutely nothing at all. Its only purpose is to provide dummy data for assessed labs',	'iOS'),
 (41,	'MicroHard Bug',	'The MicroHard bug infects windows machines and makes them harder to use. So hard to use infact that it renders them more useless than they would be in the first place.',	'Microsoft');
 
--- 2016-04-25 09:09:33
+-- 2016-04-25 10:48:42
