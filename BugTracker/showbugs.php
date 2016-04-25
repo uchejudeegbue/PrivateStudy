@@ -71,7 +71,7 @@ $result = $db->query ($sql_query);
 while ($row = $result->fetch_array()){
     $bugName = $row['bugName'];
     $bugSummary = $row['bugSummary'];
-    $bugCategory = $row['bugCategory];
+    $bugCategory = $row['bugCategory'];
 
 }
 echo "My name is " . "{$bugName}" . " " . "{$bugSummary}" . " " . "{$bugCategory}" . "<br>";
