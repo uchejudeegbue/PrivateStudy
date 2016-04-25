@@ -48,6 +48,7 @@
                 </tr> ";
 
                 if(mysqli_num_rows($result)>0){
+                    echo "ture";
                 while($row = mysqli_fetch_assoc($result)){
                 echo "<tr>
                     <td>".$row['bugName']."</td>
