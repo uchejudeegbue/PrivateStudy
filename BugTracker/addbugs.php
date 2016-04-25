@@ -34,7 +34,9 @@
         </nav>
     </div>
 
-
+    <div class="para">
+       <p>Please go to the index page and add a bug</p>
+    </div>
 
 </content>
 <footer>
