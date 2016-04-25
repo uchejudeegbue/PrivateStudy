@@ -79,7 +79,7 @@ else {
 
 
 if (mysqli_query($db,$sql)){
-    header ("location:display.php");
+    header ("location:showbugs.php");
 }
 else {
     echo "Error: " . $sql . "<br>" . mysqli_error ($db);
