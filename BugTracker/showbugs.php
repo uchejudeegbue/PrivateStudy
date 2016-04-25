@@ -41,7 +41,7 @@ error_reporting(E_ALL);
             <?php
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
-            $result = mysqli_query($dbs,$sql);
+            $result = mysqli_query($db,$sql);
             echo "
             <table>
                 <tr>
