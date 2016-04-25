@@ -39,6 +39,7 @@ error_reporting(-1);
 
         <div class="para">
             <?php
+            echo $hphp;
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
             $result = mysqli_query($db,$sql);
