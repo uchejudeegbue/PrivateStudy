@@ -52,7 +52,7 @@ error_reporting(E_ALL);
                 </tr> ";
 
                 if(mysqli_num_rows($result)>0){
-                    echo "true";
+
                 while($row = mysqli_fetch_assoc($result)){
                 echo "<tr>
                     <td>".$row['bugName']."</td>
