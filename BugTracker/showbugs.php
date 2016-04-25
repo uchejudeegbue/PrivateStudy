@@ -50,9 +50,9 @@
                 if(mysqli_num_rows($result)>0){
                 while($row = mysqli_fetch_assoc($result)){
                 echo "<tr>
-                    <td>{$row['bugName']}</td>
-                    <td>{$row['bugSummary']}</td>
-                    <td>{$row['bugCategory']}</td>
+                    <td>".$row['bugName']."</td>
+                    <td>".$row['bugSummary']."</td>
+                    <td>".$row['bugCategory']."</td>
 
                 </tr>";
                 }
