@@ -1,3 +1,7 @@
+<?php include('connect.php');
+error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +41,7 @@
             <?php
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
-            $result = mysqli_query($db,$sql);
+            $result = mysqli_query($dbs,$sql);
             echo "
             <table>
                 <tr>
@@ -48,7 +52,7 @@
                 </tr> ";
 
                 if(mysqli_num_rows($result)>0){
-                    echo "ture";
+                    echo "true";
                 while($row = mysqli_fetch_assoc($result)){
                 echo "<tr>
                     <td>".$row['bugName']."</td>
