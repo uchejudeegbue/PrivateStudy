@@ -37,7 +37,7 @@
             <?php
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
-            $result = mysqli_query($db,$sql);//procedural programming
+            $result = mysqli_query($db,$sql);
             echo "
             <table>
                 <tr>
@@ -62,7 +62,7 @@
 
         </div>
 
-    </contect>
+
     <footer>
         Designed by Uche Jude Egbue, 2016
     </footer>
