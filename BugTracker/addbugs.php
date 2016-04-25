@@ -40,7 +40,7 @@
 
 </content>
 <footer>
-    Designed by Uche Jude Egbue, 2016
+    Designed by Uche Jude Egbue, 2016.
 </footer>
 </div>
 </body>
