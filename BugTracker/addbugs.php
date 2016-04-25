@@ -34,23 +34,7 @@
         </nav>
     </div>
 
-    <div class="para">
-        <form>
-            <label>Bug Name</label>
-            <input type="text" name="bugname"><br><br>
-            <label>Bug Summary</label>
-            <textarea rows="3" cols="20"></textarea><br><br>
-            <label>Bug Category
-                <select name="Bug">
-                    <option value="Android">Android</option>
-                    <option value="iOS">iOS</option>
-                    <option value="Windows">Windows</option>
-                </select></label><br><br>
-            <input type="submit" value="submit"><br>
-            <br>
 
-        </form>
-    </div>
 
 </content>
 <footer>
