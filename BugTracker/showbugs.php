@@ -1,7 +1,3 @@
-<?php include('connect.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +35,7 @@
 
         <div class="para">
             <?php
+            include('connect.php');
 
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
