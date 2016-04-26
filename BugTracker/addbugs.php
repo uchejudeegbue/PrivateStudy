@@ -20,10 +20,10 @@
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="bugs.html">All Bug Items</a>
+                <li><a href="index.php">All Bug Items</a>
                     <ul>
-                        <li><a href="addbugs.html">Add Bug</a></li>
-                        <li><a href="showbugs.html">Show Bug</a></li>
+                        <li><a href="addbugs.php">Add Bug</a></li>
+                        <li><a href="showbugs.php">Show Bug</a></li>
                     </ul>
                 </li>
                 <li><a href="bugs.html">Andriod Bugs</a></li>
