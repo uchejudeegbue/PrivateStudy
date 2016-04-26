@@ -42,10 +42,10 @@
             </label><br><br>
             <label>Bug Summary</label>
             <label>
-                <textarea rows="3" cols="20"></textarea>
+                <textarea  name="summary" rows="3" cols="20"></textarea>
             </label><br><br>
             <label>Bug Category
-                <select name="Bug">
+                <select name="bug">
                     <option value="Android">Android</option>
                     <option value="iOS">iOS</option>
                     <option value="Windows">Windows</option>
@@ -61,7 +61,25 @@
 <footer>
     Designed by Uche Jude Egbue, 2016
 </footer>
+<? include ('connect.php') ?>
+   <? if($SERVER['REQUEST_METHOD']==='GET'){
+       header("addbugs.php");
+   }
+   elseif ($SERVER['REQUEST_METHOD']=== 'POST'){
+       $bugname=$_POST['bugname'];
+       $bugsummary=$_POST['summary'];
+       $category=$_POST['bug'];
+
+       $sql="INSERT INTO bugtracker (bugName,bugSummary,bugCategory) VALUES ('$bugname','$bugsummary','$category')";
+     if (mysqli_query($db,$sql)){
+         header ("location:showbugs.php");
+     }
+     else {
+         echo "Error: " . $sql . "<br>" . mysqli_error ($db);
+     }
 
 
+   }
+   ?>
 </body>
 </html>
