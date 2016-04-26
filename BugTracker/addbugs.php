@@ -35,7 +35,7 @@
     </div>
 
     <div class="para">
-        <form action="<? {$_SERVER['PHP_SELF'];} ?>" method="post">
+        <form action="<? {$_SERVER["PHP_SELF"];} ?>" method="POST">
             <label>Bug Name</label>
             <label>
                 <input type="text" name="bugname">
@@ -63,7 +63,7 @@
 </footer>
 <? include('connect.php') ?>
 <? if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    header("location:addbugs.php");
+    header("location: addbugs.php");
 }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $bugname = $_POST['bugname'];
@@ -72,12 +72,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql = "INSERT INTO bugtracker (bugName,bugSummary,bugCategory) VALUES ('$bugname','$bugsummary','$category')";
     if (mysqli_query($db, $sql)) {
-        header("location:showbugs.php");
+        header("location: showbugs.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 }
-else{header("location:addbugs.php");}
+else{header("location: index.php");}
 ?>
 </body>
 </html>
