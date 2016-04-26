@@ -35,9 +35,7 @@
     </div>
 
     <div class="para">
-        <form action="<? {
-            $_SERVER['PHP_SELF'];
-        } ?>" method="post">
+        <form action="<? {$_SERVER['PHP_SELF'];} ?>" method="post">
             <label>Bug Name</label>
             <label>
                 <input type="text" name="bugname">
