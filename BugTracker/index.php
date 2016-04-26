@@ -17,6 +17,7 @@
 
 </header>
 <content>
+    <div class="rapper">
     <div class="nav">
         <nav>
             <ul>
@@ -44,7 +45,7 @@
             mollit
             anium id est laborum</p>
     </div>
-
+    </div>
 </content>
 <footer>
     Designed by Uche Jude Egbue, 2016
