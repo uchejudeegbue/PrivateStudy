@@ -44,7 +44,9 @@ body{
     padding: 2px;
 }
 
-
+#show a:hover{
+    padding:30px;
+}
 footer{
     height: 50px;
     clear: both;
