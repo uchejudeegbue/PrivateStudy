@@ -63,7 +63,7 @@
 </footer>
 <? include('connect.php') ?>
 <? if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    header("location: addbugs.php");
+    header("location: showbugs.php");
 }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $bugname = $_POST['bugname'];
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 }
-//else{header("location: index.php");}
+else{header("location: index.php");}
 ?>
 </body>
 </html>
