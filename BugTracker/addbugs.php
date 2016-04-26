@@ -64,9 +64,10 @@
     Designed by Uche Jude Egbue, 2016
 </footer>
 <? include('connect.php') ?>
-<? if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    header("location:addbugs.php");
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+<?// if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    //header("location:addbugs.php");
+//}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $bugname = $_POST['bugname'];
     $bugsummary = $_POST['summary'];
     $category = $_POST['bug'];
