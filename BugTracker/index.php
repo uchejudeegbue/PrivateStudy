@@ -21,7 +21,7 @@
     <div class="nav">
         <nav>
             <ul>
-                <li><span id="show"<a href="showbugs.php">All Bug Items</a>>
+                <li><a href="showbugs.php">All Bug Items</a>
                     <ul>
                         <li><a href="addbugs.php">Add Bug</a></li>
                         <li><a href="showbugs.php">Show Bug</a></li>
