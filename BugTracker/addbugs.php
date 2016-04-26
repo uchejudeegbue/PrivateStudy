@@ -13,7 +13,7 @@
 
     <h1>Bug Tracker</h1>
 
-    <p id = p1>Keeping track of all the pesky little bugs</p>
+    <p id=p1>Keeping track of all the pesky little bugs</p>
 
 </header>
 <main>
@@ -35,14 +35,16 @@
     </div>
 
     <div class="para">
-        <form action="<? {$_SERVER['PHP_SELF'];}?>" method="post">
+        <form action="<? {
+            $_SERVER['PHP_SELF'];
+        } ?>" method="post">
             <label>Bug Name</label>
             <label>
                 <input type="text" name="bugname">
             </label><br><br>
             <label>Bug Summary</label>
             <label>
-                <textarea  name="summary" rows="3" cols="20"></textarea>
+                <textarea name="summary" rows="3" cols="20"></textarea>
             </label><br><br>
             <label>Bug Category
                 <select name="bug">
@@ -61,25 +63,22 @@
 <footer>
     Designed by Uche Jude Egbue, 2016
 </footer>
-<? include ('connect.php') ?>
-   <? if($SERVER['REQUEST_METHOD']==='GET'){
-       header("addbugs.php");
-   }
-   elseif ($SERVER['REQUEST_METHOD']=== 'POST'){
-       $bugname=$_POST['bugname'];
-       $bugsummary=$_POST['summary'];
-       $category=$_POST['bug'];
+<? include('connect.php') ?>
+<? if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    header("location:addbugs.php");
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $bugname = $_POST['bugname'];
+    $bugsummary = $_POST['summary'];
+    $category = $_POST['bug'];
 
-       $sql="INSERT INTO bugtracker (bugName,bugSummary,bugCategory) VALUES ('$bugname','$bugsummary','$category')";
-     if (mysqli_query($db,$sql)){
-         header ("location:showbugs.php");
-     }
-     else {
-         echo "Error: " . $sql . "<br>" . mysqli_error ($db);
-     }
-
-
-   }
-   ?>
+    $sql = "INSERT INTO bugtracker (bugName,bugSummary,bugCategory) VALUES ('$bugname','$bugsummary','$category')";
+    if (mysqli_query($db, $sql)) {
+        header("location:showbugs.php");
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    }
+}
+else{header("location:index.php");}
+?>
 </body>
 </html>
