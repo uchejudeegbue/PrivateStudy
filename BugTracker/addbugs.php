@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 }
-else{header("location: index.php");}
+//else{header("location: index.php");}
 ?>
 </body>
 </html>
