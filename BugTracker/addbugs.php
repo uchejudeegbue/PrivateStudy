@@ -20,7 +20,7 @@
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="index.php">All Bug Items</a>
+                <li><a href="addbugs.php">All Bug Items</a>
                     <ul>
                         <li><a href="addbugs.php">Add Bug</a></li>
                         <li><a href="showbugs.php">Show Bug</a></li>
