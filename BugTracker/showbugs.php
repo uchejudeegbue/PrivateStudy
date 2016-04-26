@@ -19,16 +19,18 @@
     <main>
         <div class="nav">
             <nav>
+                <ul>
                 <li><a href="bugs.html">All Bug Items</a>
                     <ul>
-                        <li><a href="addbugs.html">Add Bug</a></li>
-                        <li><a href="showbugs.html">Show Bug</a></li>
+                        <li><a href="addbugs.php">Add Bug</a></li>
+                        <li><a href="showbugs.php">Show Bug</a></li>
                     </ul>
                 </li>
-                <li><a href="androidbugs.html">Andriod Bugs</a></li>
-                <li><a href="iosbugs.html">iOS Bugs</a></li>
-                <li><a href="windowsbugs.html">Windows Bugs</a></li>
-                <li><a href="insertbug.html">Insert Bug</a></li>
+                <li><a href="bugs.html">Andriod Bugs</a></li>
+                <li><a href="bugs.html">iOS Bugs</a></li>
+                <li><a href="bugs.html">Windows Bugs</a></li>
+                <li><a href="bugs.html">Insert Bug</a></li>
+                </ul>
             </nav>
         </div>
 
