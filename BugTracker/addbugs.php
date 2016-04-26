@@ -16,7 +16,7 @@
     <p id = p1>Keeping track of all the pesky little bugs</p>
 
 </header>
-<content>
+<main>
     <div class="nav">
         <nav>
             <ul>
@@ -35,39 +35,29 @@
     </div>
 
     <div class="para">
-       <p>Please go to the index page and add a bug</p>
+        <form action="<? {$_SERVER['PHP_SELF'];}?>" method="post">
+            <label>Bug Name</label>
+            <input type="text" name="bugname"><br><br>
+            <label>Bug Summary</label>
+            <textarea rows="3" cols="20"></textarea><br><br>
+            <label>Bug Category
+                <select name="Bug">
+                    <option value="Android">Android</option>
+                    <option value="iOS">iOS</option>
+                    <option value="Windows">Windows</option>
+                </select></label><br><br>
+            <input type="submit" value="submit"><br>
+            <br>
+
+        </form>
     </div>
 
-</content>
+
+</main>
 <footer>
-    Designed by Uche Jude Egbue, 2016.
+    Designed by Uche Jude Egbue, 2016
 </footer>
-</div>
+
+
 </body>
 </html>
-
-<?php
-
-include ('connect.php');
-
-if (empty ($_POST['bugName'])||(empty ($_POST['bugSummary']))||(empty($_POST['bugCategory']))){
-    echo "All fields are required";
-}
-else {
-    $bugName = $_POST['bugName'];
-    $bugSummary = $_POST ['budSummary'];
-    $bugCategory = $_POST ['bugCategory'];
-
-    $sql = "INSERT INTO bugtracker (bugName, bugSummary, bugCategory) VALUES ('$bugName', '$bugSummary', '$bugCategory')";
-    mysqli_query ($db, $sql);
-}
-
-
-
-if (mysqli_query($db,$sql)){
-    header ("location:showbugs.php");
-}
-else {
-    echo "Error: " . $sql . "<br>" . mysqli_error ($db);
-}
-?>

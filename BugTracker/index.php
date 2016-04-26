@@ -16,7 +16,7 @@
     <p id = p1>Keeping track of all the pesky little bugs</p>
 
 </header>
-<content>
+<main>
     <div class="rapper">
     <div class="nav">
         <nav>
@@ -46,7 +46,7 @@
             anium id est laborum</p>
     </div>
     </div>
-</content>
+</main>
 <footer>
     Designed by Uche Jude Egbue, 2016
 </footer>

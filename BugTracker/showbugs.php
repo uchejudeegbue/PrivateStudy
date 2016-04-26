@@ -16,7 +16,7 @@
         <p id = p1>Keeping track of all the pesky little bugs</p>
 
     </header>
-    <contect>
+    <main>
         <div class="nav">
             <nav>
                 <li><a href="bugs.html">All Bug Items</a>
