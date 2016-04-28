@@ -1,7 +1,76 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 1418146
- * Date: 28/04/2016
- * Time: 14:53
- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bugtracas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Start of header-->
+<header>
+
+
+    <img id="logo" src="logo.png"/>
+
+
+    <div class="header">
+        <h2>Bug Tracker</h2>
+
+        <p>Keeping track of all pesky little bugs</p>
+    </div>
+</header>
+<!--End of header-->
+
+<!--Start of main-->
+<main>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">All Bug Items</a></li>
+                <li><a href="showbugs.html">Android Bugs</a></li>
+                <li><a href="showbugs.html">iOS Bugs</a></li>
+                <li><a href="showbugs.html">Windows Bugs</a></li>
+                <li><a href="addbugs.html">Insert Bug</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="article">
+
+        <form>
+            <label>Bug Name</label>
+            <label>
+                <input type="text" name="bugname" required/>
+            </label><br><br>
+            <label>Bug Summary</label>
+            <label>
+                <textarea row="5px" col="50px" required></textarea>
+            </label><br><br>
+            <label>Bug Category</label>
+            <label>
+                <select name="Bugs" required>
+
+                    <option value="Android">Android</option>
+                    <option value="Windows">Windows</option>
+                    <option value="iOS">iOS</option>
+                </select>
+
+            </label><br><br>
+
+            <label>
+                <input type="submit" value="submit" required/>
+            </label>
+
+        </form>
+    </div>
+</main>
+<!--end of main-->
+
+<!--Start of footer-->
+<footer>
+    Designed by [Uche Jude Egbue, 2016]
+</footer>
+<!--end of footer-->
+</body>
+</html>
