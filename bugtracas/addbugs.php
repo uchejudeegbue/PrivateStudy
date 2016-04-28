@@ -1,3 +1,24 @@
+<?php
+include('connect.php');
+if(isset($_POST['bugname']) && isset($_POST['bugs']) && isset($_POST['summary'])){
+    $bugname = $_POST['bugname'];
+    $bugs = $_POST['bugs'];
+    $summary = $_POST['summary'];
+
+    $sql = "INSERT INTO bugtracas (bugName, bugSummary, bugCategory)
+            VALUES ('$bugname', '$summary', '$bugs')";
+
+    if($push = mysqli_query($db, $sql)){
+        header("Location: index.php");
+    }else{
+        echo "Error:" . mysqli_error($db);
+    }
+
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,18 +59,18 @@
 
     <div class="article">
 
-        <form>
+        <form action="<? $_SERVER["PHP_SELF"] ?>" method="post">
             <label>Bug Name</label>
             <label>
                 <input type="text" name="bugname" required/>
             </label><br><br>
             <label>Bug Summary</label>
             <label>
-                <textarea row="5px" col="50px" required></textarea>
+                <textarea row="5px" col="50px" required name="summary"></textarea>
             </label><br><br>
             <label>Bug Category</label>
             <label>
-                <select name="Bugs" required>
+                <select name="bugs" required>
 
                     <option value="Android">Android</option>
                     <option value="Windows">Windows</option>
