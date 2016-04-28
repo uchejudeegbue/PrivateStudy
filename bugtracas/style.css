@@ -10,6 +10,7 @@ body{
 
     font-size:14px;
     width:600px;
+    margin: auto;
 }
 
 #logo{
@@ -33,28 +34,29 @@ header{
 }
 
 .nav{
+    min-width: 22%;
     float:left;
     height: 200px;
-    padding:10px;
+    padding:2px;
     background-color: floralwhite;
-    margin-right:10px;
     margin-bottom:2px;
     border: solid;
-    border-color: orangered;
+    border-color: green;
 
 }
 
 .article{
+    max-width: 68.5%;
+    float: right;
     background-color: aliceblue;
     text-align:justify;
     padding:20px;
-
+    margin-bottom: 2px;
     border: solid;
     border-color:cadetblue;
     padding-bottom:81px;
     width: auto;
     height: auto;
-
 
 }
 
