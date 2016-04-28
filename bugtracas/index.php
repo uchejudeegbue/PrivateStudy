@@ -1,7 +1,57 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 1418146
- * Date: 28/04/2016
- * Time: 14:53
- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bugtracas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Start of header-->
+<header>
+
+
+    <img id="logo" src="logo.png"/>
+
+
+    <div class="header">
+        <h2>Bug Tracker</h2>
+
+        <p>Keeping track of all pesky little bugs</p>
+    </div>
+</header>
+<!--End of header-->
+
+<!--Start of main-->
+<main>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="index.php">All Bug Items</a></li>
+                <li><a href="showbugs.php">Android Bugs</a></li>
+                <li><a href="showbugs.php">iOS Bugs</a></li>
+                <li><a href="showbugs.php">Windows Bugs</a></li>
+                <li><a href="addbugs.php">Insert Bug</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sad do eiusmod tempor incididunt ul labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla
+            pariatur.
+            Excepteur sint occaecat cupidatal non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+    </div>
+</main>
+<!--end of main-->
+
+<!--Start of footer-->
+<footer>
+    Designed by [Uche Jude Egbue, 2016]
+</footer>
+<!--end of footer-->
+</body>
+</html>
