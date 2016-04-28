@@ -39,7 +39,9 @@
     <div class="article">
 
         <?php
+        if(isset($_GET['category']) && $_GET['category'] == 'all'){
 
+        }
         include('connect.php');
 
         $sql = "SELECT bugName, bugSummary, bugCategory

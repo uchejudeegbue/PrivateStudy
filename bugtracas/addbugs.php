@@ -9,9 +9,9 @@ if(isset($_POST['bugname']) && isset($_POST['bugs']) && isset($_POST['summary'])
             VALUES ('$bugname', '$summary', '$bugs')";
 
     if($push = mysqli_query($db, $sql)){
-        header("Location: index.php");
+        header("Location: showbugs.php");
     }else{
-        echo "Error:" . mysqli_error($db);
+        header("Location: index.php");
     }
 
 
