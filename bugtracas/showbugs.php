@@ -39,15 +39,12 @@
     <div class="article">
 
         <?php
-        if(isset($_GET['category']) && $_GET['category'] == 'all'){
-
-        }
         include('connect.php');
-
-        $sql = "SELECT bugName, bugSummary, bugCategory
+        if(isset($_GET['category']) && $_GET['category'] == 'all'){
+            $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracker ";
-        $result = mysqli_query($db,$sql);
-        echo "
+            $result = mysqli_query($db,$sql);
+            echo "
             <table>
                 <tr>
                     <th>bugName </th>
@@ -56,18 +53,47 @@
 
                 </tr> ";
 
-        if(mysqli_num_rows($result)>0){
+            if(mysqli_num_rows($result)>0){
 
-            while($row = mysqli_fetch_assoc($result)){
-                echo "<tr>
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<tr>
                     <td>".$row['bugName']."</td>
                     <td>".$row['bugSummary']."</td>
                     <td>".$row['bugCategory']."</td>
 
                 </tr>";
+                }
             }
+            echo "</table>";
+        }elseif(isset($_GET['category']) && $_GET['category'] == 'android'){
+            $sql = "SELECT bugName, bugSummary, bugCategory
+            FROM bugtracker WHERE bugCategory='Android'";
+            $result = mysqli_query($db,$sql);
+            echo "
+            <table>
+                <tr>
+                    <th>bugName </th>
+                    <th>bugSummary</th>
+                    <th>bugCategory</th>
+
+                </tr> ";
+
+            if(mysqli_num_rows($result)>0){
+
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<tr>
+                    <td>".$row['bugName']."</td>
+                    <td>".$row['bugSummary']."</td>
+                    <td>".$row['bugCategory']."</td>
+
+                </tr>";
+                }
+            }
+            echo "</table>";
         }
-        echo "</table>";
+
+
+
 
 
         ?>
