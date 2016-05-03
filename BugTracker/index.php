@@ -17,13 +17,14 @@
 
 </header>
 <main>
+    <div class="rapper">
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="index.php">All Bug Items</a>
+                <li><a href="#">All Bug Items</a>
                     <ul>
-                        <li><a href="addbugs.html">Add Bug</a></li>
-                        <li><a href="showbugs.html">Show Bug</a></li>
+                        <li><a href="addbugs.php">Add Bug</a></li>
+                        <li><a href="showbugs.php">Show Bug</a></li>
                     </ul>
                 </li>
                 <li><a href="bugs.html">Andriod Bugs</a></li>
@@ -44,7 +45,7 @@
             mollit
             anium id est laborum</p>
     </div>
-
+    </div>
 </main>
 <footer>
     Designed by Uche Jude Egbue, 2016
