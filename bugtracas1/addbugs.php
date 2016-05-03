@@ -5,7 +5,7 @@ if(isset($_POST['bugname']) && isset($_POST['bugs']) && isset($_POST['summary'])
     $bugs = $_POST['bugs'];
     $summary = $_POST['summary'];
 
-    $sql = "INSERT INTO bugtracas (bugName, bugSummary, bugCategory)
+    $sql = "INSERT INTO bugtracas1 (bugName, bugSummary, bugCategory)
             VALUES ('$bugname', '$summary', '$bugs')";
 
     if($push = mysqli_query($db, $sql)){
