@@ -27,10 +27,10 @@
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="index.php">All Bug Items</a></li>
-                <li><a href="showbugs.php">Android Bugs</a></li>
-                <li><a href="showbugs.php">iOS Bugs</a></li>
-                <li><a href="showbugs.php">Windows Bugs</a></li>
+                <li><a href="showbugs.php?category=all">All Bug Items</a></li>
+                <li><a href="showbugs.php?category=android">Android Bugs</a></li>
+                <li><a href="showbugs.php?category=iOS">iOS Bugs</a></li>
+                <li><a href="showbugs.php?category=windows">Windows Bugs</a></li>
                 <li><a href="addbugs.php">Insert Bug</a></li>
             </ul>
         </nav>
@@ -68,6 +68,56 @@
         }elseif(isset($_GET['category']) && $_GET['category'] == 'android'){
             $sql = "SELECT bugName, bugSummary, bugCategory
             FROM bugtracas WHERE bugCategory='Android'";
+            $result = mysqli_query($db,$sql);
+            echo "
+            <table>
+                <tr>
+                    <th>bugName </th>
+                    <th>bugSummary</th>
+                    <th>bugCategory</th>
+
+                </tr> ";
+
+            if(mysqli_num_rows($result)>0){
+
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<tr>
+                    <td>".$row['bugName']."</td>
+                    <td>".$row['bugSummary']."</td>
+                    <td>".$row['bugCategory']."</td>
+
+                </tr>";
+                }
+            }
+            echo "</table>";
+        }elseif(isset($_GET['category']) && $_GET['category'] == 'iOS'){
+            $sql = "SELECT bugName, bugSummary, bugCategory
+            FROM bugtracas WHERE bugCategory='iOS'";
+            $result = mysqli_query($db,$sql);
+            echo "
+            <table>
+                <tr>
+                    <th>bugName </th>
+                    <th>bugSummary</th>
+                    <th>bugCategory</th>
+
+                </tr> ";
+
+            if(mysqli_num_rows($result)>0){
+
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<tr>
+                    <td>".$row['bugName']."</td>
+                    <td>".$row['bugSummary']."</td>
+                    <td>".$row['bugCategory']."</td>
+
+                </tr>";
+                }
+            }
+            echo "</table>";
+        }elseif(isset($_GET['category']) && $_GET['category'] == 'windows'){
+            $sql = "SELECT bugName, bugSummary, bugCategory
+            FROM bugtracas WHERE bugCategory='Windows'";
             $result = mysqli_query($db,$sql);
             echo "
             <table>
